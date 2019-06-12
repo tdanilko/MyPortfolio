@@ -1,0 +1,6 @@
+@media (max-width: 480px) {
+  .content {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #c9c9c9;
+    border-top: none; } }

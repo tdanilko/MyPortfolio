@@ -1,0 +1,69 @@
+// @media (max-width: 440px){
+    .about-wrapp{
+        .title-one{
+            text-align: left;
+            font-size: 13px;
+            padding: 0;
+        }
+        .about{
+            font-size: 13px;
+            letter-spacing: 1;
+            color: rgb(126, 126, 126);
+            line-height: 1.5;
+            font-family: sans-serif;
+        }
+        .button-about{
+            @include button(transparent, 15px, 100%, 1px solid $border-color, 11px, 3, bolder);
+            outline: none;
+            margin: 30px 0px 40px 0px;
+            &:hover{
+                color: $hover-color;
+                border-color: $hover-color;
+                cursor: pointer;
+            }
+        }
+    }
+    @media (min-width: 480px) {
+        .about-wrapp{
+            @include flex-box(column, center, flex-start);
+            .button-about{
+                @include button(transparent, 15px, 200px, 1px solid $border-color, 11px, 3, bolder);
+            }
+        }
+    }
+    .footer-wrapp{
+        margin: 20px;
+        @include flex-box(column, center, flex-start);
+        .social{
+            .fab{
+                color: rgb(133, 133, 133);
+                margin-right: 15px;
+                &:hover{
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+            }
+            .fas{
+                color: rgb(133, 133, 133);
+                margin-right: 15px;
+                &:hover{
+                    color: $hover-color;
+                    cursor: pointer;
+                }
+            }
+        }
+        .copyright{
+            list-style: none;
+            @include flex-box(row, space-around, center);
+            padding: 0;
+            .copyright-item{
+                padding: 10px;
+                letter-spacing: 0.5;
+                font-family: Verdana;
+                font-size: 10px;
+                color: rgb(167, 167, 167);
+            }
+        }
+    }
+// }
+

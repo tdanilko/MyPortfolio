@@ -1,0 +1,14 @@
+.title-one {
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-size: 19px;
+  letter-spacing: 3;
+  font-weight: bolder;
+  color: #3b3b3b; }
+
+.section-descr {
+  font-size: 11px;
+  letter-spacing: 3;
+  text-align: center;
+  color: #9b9b9b;
+  line-height: 2; }

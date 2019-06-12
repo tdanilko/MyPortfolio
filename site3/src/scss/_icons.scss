@@ -1,0 +1,13 @@
+// Social
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a{
+    text-align:center;
+    width:15px;
+    height:15px;
+    float:left;
+    margin:0 50px 50px 0;
+    color: $text-color;
+    &:hover{
+        color: $color-hover;
+    }
+}

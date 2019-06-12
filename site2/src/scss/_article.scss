@@ -1,0 +1,249 @@
+.navigation{
+    margin-left: 300px;
+    width: 100%;
+    height: 100%;
+    .section-one{
+        @include flex-box(column, center, flex-start);
+        background-image: linear-gradient(to top left, rgb(184, 152, 235), rgb(56, 21, 102));
+        height: 100%;
+        margin: 0;
+        padding: 40px;
+        .content-title{
+            @include title-style($title-color, 45px);
+            text-shadow: 2px 1px 2px rgb(49, 49, 49);
+            font-family: Verdana;
+        }
+        .content-descr{
+            width: 70%;
+            font-size: 22px;
+            line-height: 1.8;
+            color: $text-color;
+            a{
+                @include link($text-color);
+                &:hover{
+                    @include link-hover($title-color, none);
+                }  
+            }
+        }
+        .content-button{
+            @include button(50px, 20px, $title-color, 11px, bold, 4px, 0.5px solid $text-color, 25px, all 1s ease);
+            &:hover{
+                @include button-hover(rgb(119, 91, 161), 1px solid); 
+
+            }
+        }
+        
+    }
+    .section-two{
+        margin: 0;
+    }
+    .content-one{
+        @include flex-box(row, flex-start, center);
+        margin: 0;
+        
+        .content{
+            @include flex-box(column, center, flex-start);
+            background-color: rgb(119, 87, 194);
+            height: 400px;
+            padding-left: 30px;
+            .content-title{
+                @include title-style($title-color, 28px);
+                font-family: Verdana;
+            }
+            .content-descr{
+                @include content-describe(80%, 20px, 1.8, $text-color);
+            }
+            .content-button{
+                @include button(50px, 20px, $title-color, 11px, bold, 4px, 0.5px solid $text-color, 25px, all 1s ease);
+                &:hover{
+                    @include button-hover(rgb(149, 114, 231), 1px solid);  
+                }
+            }
+            
+        }
+    }
+    .content-two{
+        @include flex-box(row, flex-start, center);
+        margin: 0;
+        .content{
+            @include flex-box(column, center, flex-start);
+            background-color: rgb(101, 73, 165);
+            height: 400px;
+            padding-left: 30px;
+            .content-title{
+                @include title-style($title-color, 28px);
+                font-family: Verdana;
+            }
+            .content-descr{
+                @include content-describe(80%, 20px, 1.8, $text-color);
+                
+            }
+            .content-button{
+                @include button(50px, 20px, $title-color, 11px, bold, 4px, 0.5px solid $text-color, 25px, all 1s ease);
+                &:hover{
+                    @include button-hover(rgb(127, 94, 204), 1px solid);  
+                }
+            }
+            
+        }
+    }
+    .content-three{
+        @include flex-box(row, flex-start, center);
+        margin: 0;
+        .content{
+            @include flex-box(column, center, flex-start);
+            background-color: rgb(74, 54, 121);
+            height: 400px;
+            padding-left: 30px;
+            .content-title{
+                @include title-style($title-color, 28px);
+                font-family: Verdana;
+            }
+            .content-descr{
+                @include content-describe(80%, 20px, 1.8, $text-color);
+             
+            }
+            .content-button{
+                @include button(50px, 20px, $title-color, 11px, bold, 4px, 0.5px solid $text-color, 25px, all 1s ease);
+                &:hover{
+                    @include button-hover(rgb(102, 75, 165), 1px solid);  
+                }
+            }
+            
+        }
+        
+    }
+    .section-three{
+        margin: 0;
+        .content{
+            @include flex-box(column, center, flex-start);
+            background-color: rgb(156, 75, 136);
+            padding: 50px;
+            .content-title{
+                @include title-style($title-color, 28px);
+                font-family: Verdana;
+            }
+            .content-descr{
+                @include content-describe(100%, 20px, 1.8, $text-color);
+                margin-bottom: 30px;
+            }
+            .description-wrapp{
+                display: flex;
+                flex-wrap: wrap;
+                section{
+                    width: 50%;
+                    padding: 40px 40px 40px 120px;
+                    border: 1px solid $text-color;
+                    background-color: rgb(190, 86, 166);
+                    .section-title{
+                        color: $title-color;
+                        font-family: Verdana;
+                        position: relative;
+                    }
+                    .section-descr{
+                        @include content-describe(100%, 20px, 1.8, $text-color);
+                     
+                    }
+                }
+            }
+            .content-button{
+                @include button(50px, 20px, $title-color, 11px, bold, 4px, 0.5px solid $text-color, 25px, all 1s ease);
+                &:hover{
+                    @include button-hover(rgb(224, 106, 195), 1px solid);  
+                }
+            }
+            
+        }
+    }
+    .section-four{
+        .content{
+            @include flex-box(column, center, flex-start);
+            background-color: rgb(101, 73, 165);
+            padding: 50px;
+            .content-title{
+                @include title-style($title-color, 29px);
+                font-family: Verdana;
+            }
+            .content-descr{
+                @include content-describe(100%, 20px, 1.8, $text-color);
+                margin-bottom: 30px;
+            } 
+            section{
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                .left-block{
+                    padding-right: 40px;
+                    width: 65%;
+                    margin-right: 40px;
+                    border-right: 1px solid $text-color;
+                    .input-wrapp{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        input{
+                            padding: 15px;
+                            border: 1px solid $text-color;
+                            border-radius: 5px;
+                            background-color: rgb(134, 100, 214);
+                            color: $text-color;
+                            &:focus{
+                                border: 2px solid white;
+                            }
+                        }
+                    }
+                    .textarea-wrapp{
+                        .message{
+                            flex-grow: 2;
+                            width: 100%;
+                        }
+                        textarea{
+                            display: block;
+                            width: 100%;
+                            padding: 15px;
+                            border: 1px solid $text-color;
+                            border-radius: 5px;
+                            background-color: rgb(134, 100, 214);
+                            color: $text-color; 
+                            &:focus{
+                                border: 2px solid white;
+                            }
+                        }
+                    }
+                    
+                }
+                .button-wrapp{
+                    display: inline-block;
+                    .content-button{
+                        @include button(50px, 20px, $title-color, 11px, bold, 4px, 0.5px solid $text-color, 25px, all 1s ease);
+                        &:hover{
+                            @include button-hover(rgb(152, 116, 238), 1px solid);  
+                        }
+                    }
+                }
+                .right-block{
+                    width: 24%;
+                    .list{
+                        list-style: none;
+                        padding: 0;
+                        @include content-describe(100%, 20px, 1.5, $text-color);
+                    }
+                    .social{
+                        .fab{
+                            color: $text-color;
+                            padding-right: 10px;
+                        }
+                        .fas{
+                            color: $text-color;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+                .titles{
+                    @include title-style($title-color, 20px);
+                    font-family: Verdana;
+                }
+            }    
+        }
+    }    
+}

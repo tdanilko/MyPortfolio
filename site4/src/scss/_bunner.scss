@@ -1,0 +1,129 @@
+
+    .bunner-wrapp{
+        margin: 20px;
+        border: 1px solid $border-color;
+        border-left: none;
+        border-right: none;
+        .bunner{
+            padding-top: 30px;
+            .bunner-block{
+                background-color: white;
+                border: 1px solid $border-color;
+                margin-bottom: 30px;
+                .bunner-img{
+                    display: block;
+                    background-image: url(../../public/image/09.jpg);
+                    width: 100%;
+                    height: 150px;
+                    background-size: cover;
+                    &:hover{
+                        height: 160px;  
+                    }
+                }
+                .bun-img-two{
+                    background-image: url(../../public/image/07.jpg); 
+                }
+                .bun-img-three{
+                    background-image: url(../../public/image/08.jpg); 
+                }
+                .bun-img-four{
+                    background-image: url(../../public/image/06.jpg); 
+                }
+                .bunner-descr{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-bottom: 20px;              
+                    .description{
+                        width: 80%;
+                        .title-one{
+                            font-size: 12px;
+                            text-align: left;
+                            &:hover{
+                                color: $hover-color;
+                            }
+                        }
+                    }
+                    .bunner-descr-img{
+                        background-image: url(../../public/image/02.png);
+                        width: 40px;
+                        height: 40px;
+                        background-size: cover;
+                        margin-top: 28px;
+                    }
+                }
+            }
+        }
+        @media (min-width: 500px){
+            .bunner{
+                display: flex;
+                flex-wrap: wrap;
+                .bunner-block{
+                    margin-right: 60px;
+                    width: calc(50% - 30px);
+                    &:nth-child(2n){
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        // bunner-list
+        .bunner-list{
+            border: 1px solid $border-color;
+            border-left: none;
+            border-right: none;
+            width: 100%;
+            .list{
+                padding: 0;
+                list-style: none;
+                padding-bottom: 20px; 
+                .list-item{
+                    display: flex;
+                    flex-wrap: wrap;
+                    padding-bottom: 20px;
+                    border-bottom: 1px dotted $border-color;
+                    &:last-child{
+                        border-bottom: none; 
+                    }
+                    .list-descr-img{
+                        background-image: url(../../public/image/04.jpg);
+                        width: 60px;
+                        height: 60px;
+                        background-size: cover;
+                        margin-top: 30px;
+                        margin-right: 15px;
+                    } 
+                    .list-img-two{
+                        background-image: url(../../public/image/05.jpg);
+                    } 
+                    .list-img-three{
+                        background-image: url(../../public/image/09.jpg);
+                    } 
+                    .list-img-four{
+                        background-image: url(../../public/image/07.jpg);
+                    } 
+                    .list-img-five{
+                        background-image: url(../../public/image/08.jpg);
+                    }         
+                    .list-description{
+                        width: 70%;
+                        .title-one{
+                            font-size: 11px;
+                            text-align: left;
+                            &:hover{
+                                color: $hover-color;
+                            }
+                        }
+                        .list-descr{
+                            font-size: 11px;
+                            letter-spacing: 3;
+                            text-align: center;
+                            color: rgb(155, 155, 155);
+                            line-height: 2;
+                            font-family: sans-serif;
+                            padding: 0px 10px 0px 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }

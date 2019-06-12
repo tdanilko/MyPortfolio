@@ -1,0 +1,68 @@
+.header{
+    z-index: 9999;
+    width: 100%;
+    background-color: rgb(0, 0, 36);
+    opacity: 0.9;
+    @include flex-box(row, space-between, center);
+    .logo-wrapp{
+        @include flex-box(row, flex-start, center);
+        width: 50%;
+        padding: 15px;
+        .logo{
+            padding: 4px;
+            color: rgb(0, 0, 36);
+            letter-spacing: 4;
+            background-color: white;
+            font-family: $ff;
+            @media (max-width: 368px){
+                font-size: 11px;
+            }
+        }
+        .logo-item{
+            margin-left: 10px;
+            color: $text-color;
+            letter-spacing: 4;
+            font-size: 13px;
+            font-family: $ff;
+            @media (max-width: 368px){
+                display: none;
+            }
+        }
+        &:hover .logo{
+            background-color: $color-hover;
+        }
+        &:hover .logo-item{
+            color: $color-hover;
+        }
+    }
+    .menu-wrapp{
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 20px;
+        padding: 15px;
+        .menu{
+            color: $text-color;
+            letter-spacing: 4;
+            font-size: 15px;
+            font-family: Verdana;
+            @media (max-width: 368px){
+                font-size: 11px;
+            }
+        } 
+        .hamb-menu{
+            display: block;
+            font-size: 7px;
+            margin-left: 10px;
+            .hamburg{
+                width: 25px;
+                position: relative;
+            }
+            @media (max-width: 368px){
+                font-size: 6px;
+            }
+        }
+        &:hover .menu{
+            color: $color-hover;
+        }
+    }
+}

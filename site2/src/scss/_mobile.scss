@@ -1,0 +1,170 @@
+@media (max-width: 480px){
+    .nav{
+        display: none;
+    }
+    .navigation{
+        margin-left: 0;
+        width: 100%;
+        height: 100%;
+        .section-one {
+            .content-title{
+                @include title-style($title-color, 30px);
+                text-shadow: 2px 1px 2px rgb(49, 49, 49);
+        
+            }
+            .content-descr{
+                width: 70%;
+                font-size: 20px;
+                line-height: 1.8;
+                color: $text-color;
+                a{
+                    @include link($text-color);
+                    &:hover{
+                        @include link-hover($title-color, none);
+                    }  
+                }
+            }
+            
+        }
+        .section-two{
+            .content-one{
+                @include flex-box(column, flex-start, center);
+                .picture{
+                    width: 100%;
+                }
+            }
+            .content-two{
+                @include flex-box(column, flex-start, center);
+                .picture{
+                    width: 100%;
+                }
+            }
+            .content-three{
+                @include flex-box(column, flex-start, center);
+                .picture{
+                    width: 100%;
+                }
+            }
+        }
+        .section-three{
+            margin: 0;
+            .content{
+                @include flex-box(column, center, flex-start);
+               
+                padding: 50px;
+                .content-title{
+                    @include title-style($title-color, 25px);
+                    font-family: Verdana;
+                }
+                .content-descr{
+                    @include content-describe(100%, 18px, 1.8, $text-color);
+                    margin-bottom: 30px;
+                }
+                .description-wrapp{
+                    display: block;
+                    section{
+                        width: 100%;
+                        padding: 40px;
+                        border: 1px solid $text-color;
+                        .section-title{
+                            color: $title-color;
+                            font-family: Verdana;
+                            position: relative;
+                            margin-top: 33px;
+                        }
+                        .section-descr{
+                            @include content-describe(100%, 18px, 1.8, $text-color);
+                         
+                        }
+                    }
+                }
+            }
+        }
+        .section-four{
+            .content{
+                section{
+                    display: block;
+                    flex-wrap: nowrap;
+                    width: 100%;
+                    .left-block{
+                        padding-right: 0;
+                        width: 100%;
+                        margin-right: 0;
+                        border-right: none;
+                        .input-wrapp{
+                            display: block;
+                            width: 100%;
+                        }
+                        .textarea-wrapp{
+                            textarea{
+                                width: 236px;
+                            }
+                        } 
+                    }
+                    .button-wrapp{
+                        width: 100%;
+                        .content-button{
+                            @include button(40px, 20px, $title-color, 11px, bold, 4px, 0.5px solid $text-color, 25px, all 1s ease);
+                            text-align: center;
+                            margin-bottom: 40px;
+                            width: 95%;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    .content-button{
+        @include button(40px, 20px, $title-color, 11px, bold, 4px, 0.5px solid $text-color, 25px, all 1s ease);
+        text-align: center;
+        margin-bottom: 40px;
+        width: 95%;
+    }
+    .one::before{
+        content: url(../../public/image/icon1.png);
+        position: absolute;
+        left: -7px;
+        top: -60px;
+    }
+    .two::before{
+        content: url(../../public/image/icon2.png);
+        position: absolute;
+        left: -7px;
+        top: -60px;
+    }
+    .three::before{
+        content: url(../../public/image/icon3.png);
+        position: absolute;
+        left: -7px;
+        top: -60px;
+    }
+    .four::before{
+        content: url(../../public/image/icon4.png);
+        position: absolute;
+        left: -7px;
+        top: -60px;
+    }
+    .five::before{
+        content: url(../../public/image/icon5.png);
+        position: absolute;
+        left: -7px;
+        top: -60px;
+    }
+    .six::before{
+        content: url(../../public/image/icon6.png);
+        position: absolute;
+        left: -7px;
+        top: -60px;
+    }
+    
+    .footer{
+        .copyright{
+            margin-right: 200px;
+            .copyright-item{
+                padding: 20px;
+                width: 50px;
+            }
+        }
+    }
+}

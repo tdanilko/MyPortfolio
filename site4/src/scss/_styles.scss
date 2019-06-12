@@ -1,0 +1,35 @@
+.title-one{
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 18px;
+    letter-spacing: 3;
+    font-weight: bolder;
+    color: rgb(59, 59, 59);
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    transition: all 1s ease;
+    &:hover{
+        color: $hover-color;
+        cursor: pointer;
+    }
+}
+.section-descr{
+    font-size: 11px;
+    letter-spacing: 3;
+    text-align: center;
+    color: rgb(155, 155, 155);
+    line-height: 2;
+    font-family: sans-serif;
+    padding: 0px 10px 0px 10px;
+}
+
+.link{
+    color: rgb(155, 155, 155);
+    text-decoration: none;
+    border-bottom: 1px dotted rgb(155, 155, 155);
+    &:hover{
+        border-bottom: none;
+        color: $hover-color;
+        cursor: pointer;
+    }
+}

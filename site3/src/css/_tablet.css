@@ -1,0 +1,7 @@
+@media (max-width: 768px) {
+  .section-two .less {
+    width: 50%;
+    height: 300px; }
+  .section-two .more {
+    width: 50%;
+    height: 300px; } }

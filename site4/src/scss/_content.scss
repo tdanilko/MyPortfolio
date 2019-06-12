@@ -1,0 +1,192 @@
+
+    .content{
+        width: 100%;
+        .content-block{
+            border: 1px solid $border-color;
+            background-color: white;
+            @include flex-box(column, center, center);
+            padding: 50px 0px 30px 0px;
+            margin-bottom: 25px;
+            .content-block-header{
+                width: 100%;
+                @media (min-width: 500px){
+                    border-bottom: 1px solid $border-color;
+                    padding: 30px 0px;
+                }
+                .block-one{
+                    @include flex-box(column, center, center);
+                    
+                    .section-descr{
+                        margin-bottom: 30px;
+                    }
+                }
+                .block-two{
+                    @include flex-box(column, center, center);
+                    .date{
+                        font-family: sans-serif;
+                        font-size: 11px;
+                        letter-spacing: 3;
+                        font-weight: bold;
+                        margin-bottom: 20px;
+                    }
+                    .person{
+                        display: flex;
+                        .person-photo{
+                            background-image: url(../../public/image/02.png);
+                            width: 40px;
+                            height: 40px;
+                            background-size: cover;
+                        }
+                        .person-name{
+                            display: none;
+                        }
+                    }  
+                }
+                @media (min-width: 500px){
+                    .block-two{
+                        display: flex;
+                        flex-direction: row;
+                        .date{
+                            margin-bottom: 0;
+                            margin-right: 15px;
+                            padding: 15px;
+                            border-right: 1px solid $border-color;
+                        }
+                        .person{
+                            display: flex;
+                            flex-wrap: wrap;
+                            .person-name{
+                                display: block;
+                                font-size: 11px;
+                                letter-spacing: 3;
+                                color: rgb(155, 155, 155);
+                                position: relative;
+                                top: 13px;
+                                left: 15px;
+                            }
+                        }
+                    }   
+                }
+            }
+            .content-block-descr{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                @media (min-width: 500px){
+                    padding: 30px;
+                }
+                .block-img{
+                    background-image: url(../../public/image/03.jpg);
+                    width: 100%;
+                    height: 170px;
+                    background-size: cover;
+                    margin: 30px 0px 10px 0px;
+                    @media (min-width: 500px){
+                        height: 230px;
+                    }
+                }
+                .img-two{
+                    background-image: url(../../public/image/04.jpg);
+                }
+                .img-three{
+                    background-image: url(../../public/image/05.jpg);
+                }
+                .block-description{
+                    font-family: sans-serif;
+                    font-size: 15px;
+                    letter-spacing: 1;
+                    line-height: 1.5;
+                    padding: 20px;
+                    color: rgb(85, 85, 85);
+                    margin: 15px 0px;
+                    @media (min-width: 500px){
+                        padding: 0px; 
+                    }
+                }
+                .block-navigation{
+                    width: 100%;
+                    @include flex-box(column, center, center);
+                    .coments{
+                        list-style: none;
+                        @include flex-box(row, center, center);
+                        .coments-item{
+                            color: rgb(155, 155, 155);
+                            padding-right: 30px;
+                            font-size: 13px;
+                            &:hover{
+                                color: $hover-color;
+                                cursor: pointer;
+                            }
+                            .fas{
+                                color: $border-color;
+                                margin-right: 2px;
+                                &:hover{
+                                    color: $hover-color;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                    .button{
+                        @include button(white, 15px, 80%, 1px solid $border-color, 11px, 3, bolder);
+                        outline: none;
+                        transition: all 1s ease;
+                        &:hover{
+                            color: $hover-color;
+                            border-color: $hover-color;
+                            cursor: pointer;
+                        }
+                    }
+                
+                }
+                @media (min-width: 500px){
+                    .block-navigation{
+                        @include flex-box(row, space-between, center);
+                        .coments{
+                            width: 255px;
+                            order: 2;
+                        }
+                        .button{
+                            order: 1;
+                            @include button(white, 15px, 200px, 1px solid $border-color, 11px, 3, bolder);
+                        }
+                    }
+                }
+            }
+        }
+        .button-wrapp{
+            @include flex-box(column, center, center);
+            .button-one{
+                @include button(white, 15px, 80%, 1px solid $border-color, 11px, 3, bolder);
+                background-color: transparent;
+                color: $border-color;
+                outline: none;
+                margin-bottom: 15px;
+            }
+            .button-two{
+                @include button(white, 15px, 80%, 1px solid $border-color, 11px, 3, bolder);
+                background-color: transparent;
+                outline: none;
+                &:hover{
+                    color: $hover-color;
+                    border-color: $hover-color;
+                    cursor: pointer;
+                }
+            }
+        }
+        @media (min-width: 500px){
+            .button-wrapp{
+                padding-left: 20px;
+                @include flex-box(row, flex-start, center);
+                .button-one{
+                    @include button(white, 15px, 200px, 1px solid $border-color, 11px, 3, bolder);
+                    margin-bottom: 0;
+                    margin-right: 20px;
+                }
+                .button-two{
+                    @include button(white, 15px, 200px, 1px solid $border-color, 11px, 3, bolder);
+                }
+            }
+        }
+    }
+    

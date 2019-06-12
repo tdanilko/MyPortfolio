@@ -1,0 +1,39 @@
+@mixin flex-box($fd, $jc, $ai){
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+@mixin title-style($cl, $fs){
+    color: $cl;
+    font-size: $fs;
+}
+@mixin content-describe($wth, $fs, $lh, $cl) {
+    width: $wth;
+    font-size: $fs;
+    line-height: $lh;
+    color: $cl;
+}
+@mixin button($mt, $padd, $cl, $fs, $fw, $ls, $b, $b-r, $trans) {
+    margin-top: $mt;
+    padding: $padd;
+    color: $cl;
+    font-size: $fs;
+    font-weight: $fw;
+    letter-spacing: $ls;
+    border: $b;
+    border-radius: $b-r;
+    transition: $trans;
+}
+@mixin button-hover($bc, $b) {
+    background-color: $bc;
+    border: $b;
+}
+
+@mixin link($cl) {
+    color: $cl;
+}
+@mixin link-hover($cl, $td) {
+    color: $cl;
+    text-decoration: $td;
+}

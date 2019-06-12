@@ -1,0 +1,23 @@
+.footer{
+    width: 100%;
+    padding: 40px 60px 40px 40px;
+    background-color: rgb(61, 27, 100);
+    .copyright{
+        list-style: none;
+        @include flex-box(row, space-around, center);
+        margin-right: 308px;
+        padding: 0;
+        .copyright-item{
+            padding: 20px;
+            letter-spacing: 0.5;
+            font-family: Verdana;
+            @include title-style(rgb(95, 82, 119), 12px);
+            a{
+                @include link(rgb(95, 82, 119));
+                &:hover{
+                    @include link-hover($title-color, none);
+                }  
+            }
+        }
+    }
+}

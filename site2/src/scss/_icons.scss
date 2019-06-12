@@ -1,0 +1,54 @@
+// Social
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a{
+    text-align:center;
+    width:15px;
+    height:15px;
+    float:left;
+    margin:0 20px 20px 0;
+    color: $text-color;
+    &:hover{
+        color: $title-color;
+    }
+}
+
+// Icons
+.one::before{
+    content: url(../../public/image/icon1.png);
+    position: absolute;
+    left: -77px;
+    top: -10px;
+}
+.two::before{
+    content: url(../../public/image/icon2.png);
+    position: absolute;
+    left: -77px;
+    top: -10px;
+}
+.three::before{
+    content: url(../../public/image/icon3.png);
+    position: absolute;
+    left: -77px;
+    top: -10px;
+}
+.four::before{
+    content: url(../../public/image/icon4.png);
+    position: absolute;
+    left: -77px;
+    top: -10px;
+}
+.five::before{
+    content: url(../../public/image/icon5.png);
+    position: absolute;
+    left: -77px;
+    top: -10px;
+}
+.six::before{
+    content: url(../../public/image/icon6.png);
+    position: absolute;
+    left: -77px;
+    top: -10px;
+}
+
+
+

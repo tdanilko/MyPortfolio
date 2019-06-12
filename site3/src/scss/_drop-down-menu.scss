@@ -1,0 +1,60 @@
+.drop{
+    display: none;
+    
+.drop-down-menu-wrapp{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 27);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    // visibility: hidden;
+    z-index: 9999;
+    @include flex-box(column, center, center);
+    .drop-down-menu{
+        list-style: none;
+        @include flex-box(column, center, center);
+        width: 30%;
+        .drop-down-menu-item{
+            padding: 20px;
+            width: 100%;
+            color: $text-color;
+            text-align: center;
+            border-bottom: 1px solid rgb(91, 91, 139);
+            &:hover{
+                color: $color-hover;
+                cursor: pointer;
+            }
+        }
+        .menu-item{
+            font-family: $ff;
+            letter-spacing: 3;
+        }
+        .drop-down-button-one{
+            padding: 20px;
+            width: 100%;
+            text-align: center;
+            background-color: $text-color;
+            color: rgb(7, 7, 48);
+            &:hover{
+               background-color: $color-hover; 
+               cursor: pointer;
+            }
+        }
+        .drop-down-button-two{
+            padding: 20px;
+            margin-top: 15px;
+            width: 100%;
+            color: $text-color;
+            text-align: center;
+            border: 1px solid $text-color;
+            &:hover{
+                color: $color-hover;
+                border-color: $color-hover;
+                cursor: pointer;
+            }
+        }
+    }
+}
+}

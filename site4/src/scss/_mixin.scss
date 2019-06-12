@@ -1,0 +1,16 @@
+@mixin flex-box($fd, $jc, $ai) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+@mixin button($bc, $pd, $wth, $bord, $fs, $ls, $fw) {
+    background-color: $bc;
+    padding: $pd;
+    width: $wth;
+    border: $bord;
+    font-size: $fs;
+    letter-spacing: $ls;
+    font-weight: $fw; 
+    
+}

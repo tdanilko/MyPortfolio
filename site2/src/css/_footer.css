@@ -1,0 +1,7 @@
+.footer {
+  width: 100%;
+  margin-left: 300px; }
+  .footer .copyright {
+    list-style: none; }
+    .footer .copyright .copyright-item {
+      padding: 20px; }
